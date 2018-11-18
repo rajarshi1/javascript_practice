@@ -3,20 +3,30 @@
  * @param {number} n
  * @return {string} the number as a string
  */
-
+// function number(n){
+//    return String(n);
+// }
+// console.log(number(6));
 
 /**
  * Adds one to a given number.
  * @param {number} n
  * @return {number}
  */
-
+function num(n){
+    return n+1;
+}
+console.log(num(6));
 
 /**
  * Subtracts one from a given number.
  * @param {number} n
  * @return {number}
  */
+function num(n){
+    return n-1;
+}
+console.log(num(6));
 
 
 /**
