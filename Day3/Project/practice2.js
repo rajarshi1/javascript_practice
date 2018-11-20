@@ -1,43 +1,42 @@
-/**
+/*
  * Converts a number a string.
  * @param {number} n
  * @return {string} the number as a string
  */
-// function number(n){
-//    return String(n);
-// }
+function number(n){ //Style: line space missing before and after function declaration
+   return String(n);
+}
 // console.log(number(6));
 
-/**
+/*
  * Adds one to a given number.
- * @param {number} n
+ * @param {number} 
  * @return {number}
  */
-function num(n){
+function num(n){ //Style: line space missing before and after function declaration
     return n+1;
 }
 console.log(num(6));
 
-/**
+/*
  * Subtracts one from a given number.
  * @param {number} n
  * @return {number}
  */
-function num(n){
+function num(n){ //Style: line space missing before and after function declaration
     return n-1;
 }
 console.log(num(6));
 
 
-/**
+/*
  * Adds two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the sum
  */
 
-
-/**
+/*
  * Subtracts the second number from the first.
  * @param {number} x
  * @param {number} y
@@ -45,7 +44,7 @@ console.log(num(6));
  */
 
 
-/**
+/*
  * Multiplies two numbers.
  * @param {number} x
  * @param {number} y
@@ -53,7 +52,7 @@ console.log(num(6));
  */
 
 
-/**
+/*
  * Divides the first number by the second.
  * @param {number} x
  * @param {number} y
@@ -61,14 +60,14 @@ console.log(num(6));
  */
 
 
-/**
+/*
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
 
 
-/**
+/*
  * Performs a mathematical operation on two numbers.
  * Also prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
  * @param {string} operation "add", "subtract", "multiply", or "divide"
@@ -76,9 +75,17 @@ console.log(num(6));
  * @param {number} y
  * @return {number} the result
  */
+function maths(operation, x, y){ //Style: line space missing before and after function declaration
+    if (operation == 'add'){
+        console.log(`${x}+${y}=${x+y}`) // Style: semicolon missing & space after variables
+    }
+    if (operation == 'subtract'){
+        console.log(`${x}-${y}=${x-y}`) // Style: semicolon missing & space after variables
+    }
+}
 
 
-/**
+/*
  * Returns true if `a` is greater than `b`.
  * @param {number} a
  * @param {number} b
@@ -86,7 +93,7 @@ console.log(num(6));
  */
 
 
-/**
+/*
  * Returns true if `a` is less than `b`.
  * @param {number} a
  * @param {number} b
@@ -94,7 +101,7 @@ console.log(num(6));
  */
 
 
-/**
+/*
  * Returns true if `a` and `b` are equal.
  * @param {number} a
  * @param {number} b
@@ -102,7 +109,7 @@ console.log(num(6));
  */
 
 
-/**
+/*
  * Returns the smallest value of two numbers.
  * @param {number} x
  * @param {number} y
@@ -110,7 +117,7 @@ console.log(num(6));
  */
 
 
-/**
+/*
  * Returns the largest value of two numbers.
  * @param {number} x
  * @param {number} y
@@ -118,21 +125,21 @@ console.log(num(6));
  */
 
 
-/**
+/*
  * Returns true if `n` is even.
  * @param {number} n
  * @return {boolean} the number is even
  */
 
 
-/**
+/*
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
 
 
-/**
+/*
  * Returns a letter grade.
  * "A": 90-100%
  * "B": 80-89%
@@ -145,7 +152,7 @@ console.log(num(6));
  */
 
 
-/**
+/*
  * Checks if a `restaurant` object has a `reviews` property.
  * If it does, increase the property's `reviews` value by 1.
  * If it does not, set the `reviews` value to 1.
@@ -154,7 +161,7 @@ console.log(num(6));
  */
 
 
-/**
+/*
  * Joins two strings with a space.
  * @param {string} word1
  * @param {string} word2
@@ -162,7 +169,7 @@ console.log(num(6));
  */
 
 
-/**
+/*
  * Returns a circle object with the properties `circumference` and `area`.
  * Use Math.PI for the value π.
  * (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI)

@@ -8,10 +8,10 @@
 //var job = prompt('Job Title');
 
 
-//function tellFortune(children,spouce,place,job){
-//  alert(`You will be a ${job} in ${place}, married to ${spouce} with ${children} kids`)
-//}
-//tellFortune(children,spouce,place,job);
+function tellFortune(children,spouce,place,job){ //Style: space missing after variables and curly braces
+ alert(`You will be a ${job} in ${place}, married to ${spouce} with ${children} kids`) // Style: semicolon missing
+} //Style: line space is missing after the function declaration
+tellFortune(children,spouce,place,job);
 
 
 // Write a function named calculateDogAge that:
@@ -22,11 +22,11 @@
 
 //var dAge = prompt("Your puppy's age");
 //
-//function calculateDogAge(dAge,hAge){
-//  var realdAge = dAge*7;
-//  alert(`Your doggie is ${realdAge} years old in human years!`);
+function calculateDogAge(dAge,hAge){ //Style: space missing after variables and curly braces
+ var realdAge = dAge*7; // Style: indentation is missing
+ alert(`Your doggie is ${realdAge} years old in human years!`);
 
-//}
+}
 //calculateDogAge(dAge);
 
 
@@ -40,11 +40,11 @@
 // var age = prompt('Your age');
 // var amountADay = prompt("Consumption per day");
 
-// function calculateSupply(age, amountADay){
-   
-//    var cal = (maxAge-age)*365*amountADay;
-//    alert(`You will need ${cal} to last you until the ripe old age of 80`)
-// }
+function calculateSupply(age, amountADay){//Style: space missing after variables and curly braces
+   // Style: line space not required
+   var cal = (maxAge-age)*365*amountADay;
+   alert(`You will need ${cal} to last you until the ripe old age of 80`) // Style: semicolon missing
+}
 // calculateSupply(age,amountADay);
 
 
@@ -61,14 +61,14 @@
 //1. The following function returns true if the parameter age is greater than 18.
 // Otherwise it asks for a confirmation and returns its result:
 
-// function checkAge(age) {
-//   if (age > 18) {
-//     return true;
-//   } else {
-//     // ...
-//     return confirm('Did parents allow you?');
-//   }
-// }
+function checkAge(age) {
+  if (age > 18) {
+    return true;
+  } else {
+    // ...
+    return confirm('Did parents allow you?');
+  }
+}
 // // Will the function work differently if else is removed?
 
 // function checkAge(age){
@@ -86,9 +86,9 @@
 // // Otherwise it asks for a confirmation and returns its result.
 
 // var age = prompt("age");
-// function checkAge(age) {
-//   age > 18? console.log(true) :  confirm('Do you have your parents permission to access this page')
-// }
+function checkAge(age) { // Style: line space missing after and after the function
+  age > 18? console.log(true) :  confirm('Do you have your parents permission to access this page') // Style: semicolon missing
+}
 // checkAge(age);
 
 // Rewrite it, to perform the same, but without if, in a single line.
@@ -131,9 +131,9 @@
 // Write a program that asks the user for a number n and prints the sum of the numbers 1 to n
 
 var N = prompt('Number');
-numberSum(N);
+numberSum(N);// Style: line space before and after the declaration block
 function numberSum(N) {
-  var total = 0;
+  var total = 0;// style: line space missing between declaration and function
     for(var i = 1; i <= N; i++){
       total += i;
     }

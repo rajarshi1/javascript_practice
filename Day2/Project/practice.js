@@ -1,14 +1,14 @@
 // Get two values from the user ‘password’ and ‘confirm password’  using the prompt box and display a message “Password validated” if both the values match else display the message “Password do not match”
 
 
-//var one=prompt('password');
-//var two=prompt('confirm password');
-//if (one===two){
-//    alert('Password validated');
-//}
-//else{
-//    alert('password do not match');
-//}
+var one=prompt('password');
+var two=prompt('confirm password');// Style: line-space after the decalaration block
+if (one===two){
+   alert('Password validated');
+}
+else{ // Style: else can be moved to the line before
+   alert('password do not match');
+}
 
 
 // Find the output of the following
@@ -42,21 +42,21 @@
 
 // Create a function which takes two input and (a,b) and display the sum, sub, multiplication, devision of those two numbers.
 
-//function input(a,b){
-//   var multiply = a*b
-//    alert (`${multiply}`);
-//}
+function input(a,b){
+  var multiply = a*b //Style: semicolon missing
+  alert (`${multiply}`);
+}
 //input(2,3);
 
 
 // Function to display a number if user enters negative number
 var num = prompt ("enter number");
-checkNum(num);
+checkNum(num);// Style: line space missing after the declaration block
 function checkNum(num){
   if (num<0){
       alert ('Negative');
   }
-  else{
+  else{ // Style: else can be moved to line before 
       alert('positive');
   }
 }
@@ -86,10 +86,10 @@ function checkNum(num){
 
 
 // Funnction to Find the Largest Number Among Three Numbers
- function bignum(a,b,c){
+ function bignum(a,b,c){ // Style: space after variables and start of the curly braces
     return (a>b? a>c? a:c :b>c? b:c);
  }
-console.log (bignum(1,2,3))
+console.log (bignum(1,2,3)) // Style: semicolon missing
 
 //Switch
 // You are given a variable, . Your task is to print:
@@ -123,9 +123,9 @@ function number(){
 
 
 // Funnction to generate Multiplication Table of a given number (use alert for number input)
-function multab(num){
-    prompt(enter number)
-}
+// function multab(num){
+//     prompt(enter number)
+// }
 
 
 // Funnctionn to calculate the Factorial of a Number

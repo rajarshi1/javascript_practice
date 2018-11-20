@@ -14,7 +14,7 @@ alert("I'm Learning Javascript");
 
 var admin;
 var name = "John";
-admin=name;
+admin=name; // space between = and the variables required.
 alert(admin);
 
 // Use alert function to to show a message saying “Hello World”  https://javascript.info/alert-prompt-confirm
@@ -24,8 +24,8 @@ alert("Hello World");
 
 // Write a function which uses prompt to take the name of person and greets them. i.e "Welcome Arun"
 
-var name=prompt("What is your name");
-alert("Welcome "+ name);
+var name=prompt("What is your name"); // spaces between 
+alert("Welcome "+ name); // Style: line space missing before the line
 
 // Modify the previous program such that only the users Alice and Bob are greeted with their names.
 
@@ -41,7 +41,7 @@ alert("Welcome "+ name);
 
 function hello(user){
     alert(`Hello ${user}, How are you doing?`);
-}
+} // Style: line space after the function declaration and call missing
 hello('Tom');
 // Right or Wrong
 //   "Hello World"
@@ -65,13 +65,13 @@ function length() {
 var age = 26;
 
 // Calculate the age of the dog if owner's age is 7 times of dog
-var dogAge= age/7;
+var dogAge= age/7; // Style: line space missing before and after the statement
 // Use console.log() function to log the age of the dog 
-alert(dogAge);
+alert(dogAge); //Style:line space missing after the statement
 
 // Marks and max marks of the student
-var studentScore = 41
-var maxScore = 100
+var studentScore = 41 // Style: Semicolon missing
+var maxScore = 100 // Style: semicolon missing
 // Calculate the percentage of marks the student got
 var percentage = studentScore/maxScore * 100;
 
@@ -80,10 +80,10 @@ alert(percentage);
 
 
 
-var city = 'Dharamshala'
-var country = 'India'
+var city = 'Dharamshala' // Style: semicolon missing
+var country = 'India' // Style: semicolon missing
 // Make a function which can alert the message "Dharamshala, India"
 function show(){
  alert (`${city}, ${country}`);
-}
+} // Style: line space after function declaration missing
 show();

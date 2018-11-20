@@ -56,7 +56,7 @@ function personDetails(person) {
   };
   
   return person;
-}
+} // Style: line space missing before the function declaration 
 var personObj1 = {
   name: 'Alex',
   age: 30
@@ -110,7 +110,7 @@ var person = {
   subjects: {
     maths: 78,
     physics: 43
-  }
-}
+  } // Style: semicolon missing
+} // Style:semicolin missing
 
 var clone = {};
