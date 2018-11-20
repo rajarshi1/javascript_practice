@@ -27,6 +27,7 @@ function strip(str){
 // Write a JavaScript function to alphabetize a given string.(A -z)
 // Input (String) -> 'United States'
 // Output 'SUadeeinsttt'
+
 function alphabetize_string(str) {
     return str.split('').sort().join('').trim();
 }
