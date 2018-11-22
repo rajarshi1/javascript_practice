@@ -35,7 +35,9 @@
 // Input (String, String) -> ('The world of the dogs', 'the')
 // Output (Number) -> 2
 
-
+function count(str){
+      return str.toLowerCase().split('').filter((a)=>a==="the").length
+}
 
 //  Write a JavaScript function to strip leading and trailing spaces from a string.
 // Input (String) -> ('Hello World   ')

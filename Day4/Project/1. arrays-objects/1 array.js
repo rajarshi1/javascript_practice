@@ -18,6 +18,9 @@ console.log(colors[2]);
 
 //9.Remove the last color from the end of list, and then print the length of the array to the console one more time.(Hint: make use of the array's length property for this!)
 
+colors.pop(4);
+console.log(colors.length);
+
 //10.Write a for loop to iterate through every color in the array and print each color's value to the console.
 for (i=0;i<=colors.length-1;i++){ // Line spaces missing & spaces missing after variables and before curly braces
     console.log(colors[i]);
