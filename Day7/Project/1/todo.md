@@ -23,15 +23,15 @@ The children of a node are the nodes that are one level below it. Any nodes beyo
 
 
 ## Todo Tasks
-
 1. Use firstElementChild, and change the background color of the first `li` in the `ul`.
+
+document.getElementsByTagName('ul')[0].firstElementChild.style.background = "red";
 
 2. Select all the `li` element and using `forEach` or `for..of` loop change the background color of all the `li` in `ul`.
 
 3. Acces `li` node using the length property i.e node[0] and access the last list and change the colot to `pink`.
 
 4. Select the middle element `li`
-
 5. Use the element in 4 and using sibling nodes change the background color of first and last `li` to `coral` and `aquamarine`;
 
 6. 
