@@ -1,7 +1,5 @@
 var quotes;
 
-// Write your code here
-
 
 
 quotes = [
@@ -314,10 +312,26 @@ quotes = [
         "quoteText": "Great talent finds happiness in execution."
     }
 ];
+// function myFunction() {
+//     for (i=0;i<=quotes.length;i++){
+//         Math.floor(Math.random()*70);
+        
+//     }
+// }
+// myFunction();
+
+// setInterval(myFunction(), 1000);
+
+// Write your code here
+
 function myFunction() {
-    setInterval(function(){ 
-        document.write(quotes[0].quoteText);
-        document.write(quotes[0].quoteAuthor); 
-    }, 500);
+    var num = Math.floor(Math.random()*quotes.length);
+    console.log('hello from my code', num)
+    document.write(quotes[num].quoteText);
+    // document.write("check");
+     document.write(quotes[num].quoteAuthor);
 }
-//myFunction();
+
+setInterval(myFunction(), 100);
+
+document.addEventListener("click", myFunction);
