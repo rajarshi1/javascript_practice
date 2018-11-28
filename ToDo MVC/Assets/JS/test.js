@@ -1,4 +1,5 @@
 document.getElementById('submit').addEventListener('click', addlist);
+// document.addEventListener('keypress', addlist);
 
 var arr1 = [
     // {
@@ -11,6 +12,8 @@ var arr1 = [
     // },
 ];
 
+var catagoryStatus = "all";
+
 var itemList = document.querySelector('.item_list');
 // displayX();
 function addlist(){
@@ -21,6 +24,7 @@ function addlist(){
     } 
     arr1.push(obj);
     document.getElementById('input').value= "";
+    
     displayX();   
 }
 
@@ -34,7 +38,7 @@ function displayX(){
      
   }
  selector();
-//  console.table(arr1);
+ console.table(arr1);
 }
 
 
@@ -57,6 +61,34 @@ function done(f){
     // done();
          displayX();
 }
+
+document.querySelector('.all').addEventListener('click', displayX);
+document.querySelector('.active').addEventListener('click', activeArray);
+document.querySelector('.completed').addEventListener('click', completedArray);
+
+function activeArray(){
+    document.querySelector('.item_list').innerHTML = "";
+    catagoryStatus = "active";
+    var i = 0;
+     for( item of arr1){
+        if (item.status == false){
+            itemList.innerHTML += `<li><input data-id=${i} type="checkbox" class="tick" ${item.status ? "checked" : ""}><p class="${item.status ? "strike" : ""}"> ${item.name} </p><span><i data-cross=${i} class="fas fa-times"></i></span></li>`;
+            i++;
+    }
+    }
+}
+function completedArray(){
+    document.querySelector('.item_list').innerHTML = "";
+    catagoryStatus = "active";
+    var i = 0;
+     for( item of arr1){
+        if (item.status == true){
+            itemList.innerHTML += `<li><input data-id=${i} type="checkbox" class="tick" ${item.status ? "checked" : ""}><p class="${item.status ? "strike" : ""}"> ${item.name} </p><span><i data-cross=${i} class="fas fa-times"></i></span></li>`;
+            i++;
+    }
+    }
+}
+
 // if (arr1[index].status = true){
 //     document.querySelector()
 // }
@@ -64,4 +96,4 @@ function done(f){
 // e.target.dataset.cross
 
 // document.write(arr1);
-// console.log(arr1);
+// console.log(arr1)

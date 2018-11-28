@@ -8,3 +8,7 @@ li{
 .strike{
     text-decoration: line-through;
 }
+.list_status{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
