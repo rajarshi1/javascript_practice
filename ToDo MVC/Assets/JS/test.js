@@ -1,6 +1,8 @@
 document.getElementById('submit').addEventListener('click', addlist);
 // document.addEventListener('keypress', addlist);
 
+
+
 var arr1 = [
     // {
     //     name: "something",
@@ -11,6 +13,9 @@ var arr1 = [
     //     status: false
     // },
 ];
+
+
+
 
 var catagoryStatus = "all";
 
@@ -28,18 +33,31 @@ function addlist(){
     displayX();   
 }
 
+
+
+
 function displayX(){
+    
+    if (catagoryStatus == 'active'){
+        activeArray();
+    } else if(catagoryStatus == 'completed'){
+        completedArray();
+    }
+    else{
   document.querySelector('.item_list').innerHTML = "";
   var i = 0;
   for( item of arr1){
      itemList.innerHTML += `<li><input data-id=${i} type="checkbox" class="tick" ${item.status ? "checked" : ""}><p class="${item.status ? "strike" : ""}"> ${item.name} </p><span><i data-cross=${i} class="fas fa-times"></i></span></li>`;
      i++;
     //  console.log(item.status);
-     
+  }  
   }
  selector();
  console.table(arr1);
 }
+
+
+
 
 
 // addlist();
@@ -49,11 +67,16 @@ function selector(){
     
 }
 
+
+
+
 function deletex(e){
    let index = Number(e.target.dataset.cross);
    arr1.splice(index,1);
    displayX();
 }
+
+
 
 function done(f){
     let index = Number(f.target.dataset.id); arr1[index].status
@@ -62,9 +85,19 @@ function done(f){
          displayX();
 }
 
-document.querySelector('.all').addEventListener('click', displayX);
+
+
+document.querySelector('.all').addEventListener('click', ()=>{
+    catagoryStatus = "all";
+    displayX();
+});
+
+
+
 document.querySelector('.active').addEventListener('click', activeArray);
 document.querySelector('.completed').addEventListener('click', completedArray);
+document.querySelector('.clearcompleted').addEventListener('click', clearcompleted);
+document.querySelector('.item_left').addEventListener('click', displayleft);
 
 function activeArray(){
     document.querySelector('.item_list').innerHTML = "";
@@ -76,10 +109,14 @@ function activeArray(){
             i++;
     }
     }
+    selector();
 }
+
+
+
 function completedArray(){
     document.querySelector('.item_list').innerHTML = "";
-    catagoryStatus = "active";
+    catagoryStatus = "completed";
     var i = 0;
      for( item of arr1){
         if (item.status == true){
@@ -87,6 +124,16 @@ function completedArray(){
             i++;
     }
     }
+    selector();
+}
+
+
+function clearcompleted(){
+
+}
+
+function displayleft(){
+    
 }
 
 // if (arr1[index].status = true){

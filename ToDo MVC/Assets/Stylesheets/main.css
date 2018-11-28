@@ -1,6 +1,7 @@
 li{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
     width: 100px;
     align-items: center;
     justify-items: center;
