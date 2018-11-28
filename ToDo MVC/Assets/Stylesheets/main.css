@@ -1,0 +1,10 @@
+li{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100px;
+    align-items: center;
+    justify-items: center;
+}
+.strike{
+    text-decoration: line-through;
+}

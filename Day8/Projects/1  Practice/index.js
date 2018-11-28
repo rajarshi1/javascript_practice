@@ -15,7 +15,6 @@
 //Give the section with an id of container the text "Hello!".
 
 
-
 //Add the class main to the div with a class of footer.
 
 
