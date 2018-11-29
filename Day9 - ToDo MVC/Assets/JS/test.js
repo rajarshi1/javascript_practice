@@ -19,7 +19,6 @@ var arr1 = [
 
 
 
-
 var catagoryStatus = "all";
 
 var itemList = document.querySelector('.item_list');
@@ -159,6 +158,5 @@ function displayleft() {
 // }
 // displayX(); 
 // e.target.dataset.cross
-
 // document.write(arr1);
 // console.log(arr1)

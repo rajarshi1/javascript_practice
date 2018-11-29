@@ -1,0 +1,10 @@
+.item_list{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+li{
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-auto-flow: column;
+    align-items: center;
+}
