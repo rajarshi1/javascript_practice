@@ -6,33 +6,41 @@ const itemLeft = document.querySelector(".item_left");
 
 
 
-var arr1 = [
-    // {
-    //     name: "something",
-    //     status: false
-    // },
-    // {
-    //     name: "something",
-    //     status: false
-    // },
-];
+// var arr1 = [
+//     {
+//         name: "something",
+//         status: false
+//     },
+//     {
+//         name: "something",
+//         status: false
+//     },
+// ];
 
+var arr1 = JSON.parse(localStorage.getItem('arr1')) || []; 
 
 
 var catagoryStatus = "all";
 
+
+
 var itemList = document.querySelector('.item_list');
-// displayX();
+
+displayX();
+
 function addlist() {
     var getValue = document.getElementById('input').value;
     var obj = {
         name: getValue,
-        status: false
+        status: false        
     }
     arr1.push(obj);
     document.getElementById('input').value = "";
 
+    
     displayX();
+
+    localStorage.arr1 = JSON.stringify(arr1);
 }
 
 
@@ -75,6 +83,7 @@ function deletex(e) {
     let index = Number(e.target.dataset.cross);
     arr1.splice(index, 1);
     displayX();
+    localStorage.arr1 = JSON.stringify(arr1);
 }
 
 
@@ -84,6 +93,7 @@ function done(f) {
     arr1[index].status = !arr1[index].status;
     // done();
     displayX();
+    localStorage.arr1 = JSON.stringify(arr1);
 }
 
 
@@ -138,6 +148,7 @@ function clearcompleted() {
     var arr2 = arr1.filter(v => v.status==false);
     arr1 = arr2;
     displayX();
+    localStorage.arr1 = JSON.stringify(arr1);
 }
 
 function displayleft() {

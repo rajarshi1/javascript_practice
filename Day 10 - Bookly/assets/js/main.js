@@ -3,18 +3,7 @@ window.addEventListener('keypress', (e) => {
     if(e.charCode == 13) addtoArr();
 });
 
-
-
-var arr1 = [
-    // {
-    //     name: "something",
-    //     category: "";
-    // },
-    // {
-    //     name: "something",
-    //     category: "";
-    // },
-];
+var arr1 = JSON.parse(localStorage.getItem('arr2')) || []; 
 
 
 function addtoArr(){
@@ -29,10 +18,13 @@ function addtoArr(){
     arr1.push(obj);
     displayfn();
     document.getElementById('input').value = "";
+    localStorage.arr2 = JSON.stringify(arr1);
 }
 
 
 var itemList = document.querySelector('.item_list');
+
+displayfn();
 
 function displayfn(){
     document.querySelector('.item_list').innerHTML = "";
@@ -42,6 +34,7 @@ function displayfn(){
         i++;
     }
 }
+
 
 searchInput.addEventListener('keyup', searchArr);
 

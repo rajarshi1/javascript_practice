@@ -2,14 +2,14 @@ document.getElementById('submit').addEventListener('click', addlist);
 // document.addEventListener('keypress', addlist);
 
 var arr1 = [
-    // {
-    //     name: "something",
-    //     status: false
-    // },
-    // {
-    //     name: "something",
-    //     status: false
-    // },
+    {
+        name: "something",
+        status: false
+    },
+    {
+        name: "something",
+        status: false
+    },
 ];
 
 var catagoryStatus = "all";
