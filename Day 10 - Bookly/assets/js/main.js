@@ -22,7 +22,8 @@ function addtoArr(){
 }
 
 
-var itemList = document.querySelector('.item_list');
+var itemList = doc9
+ument.querySelector('.item_list');
 
 displayfn();
 
