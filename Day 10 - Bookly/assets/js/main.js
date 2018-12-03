@@ -3,7 +3,18 @@ window.addEventListener('keypress', (e) => {
     if(e.charCode == 13) addtoArr();
 });
 
-var arr1 = JSON.parse(localStorage.getItem('arr2')) || []; 
+var arr1 = [
+    {
+        name: "something",
+        status: false
+    },
+    {
+        name: "something",
+        status: false
+    },
+];
+
+arr1 = JSON.parse(localStorage.getItem('arr2')) || []; 
 
 
 function addtoArr(){
@@ -22,15 +33,14 @@ function addtoArr(){
 }
 
 
-var itemList = doc9
-ument.querySelector('.item_list');
+var itemList = document.querySelector('.item_list');
 
 displayfn();
 
 function displayfn(){
     document.querySelector('.item_list').innerHTML = "";
     var i = 0;
-    for (item of arr1) {
+    for (item in arr1) {
         itemList.innerHTML += `<li><p> ${item.name} </p><span><i data-cross=${i} class="fas fa-times"></i></span></li>`;
         i++;
     }

@@ -1,0 +1,15 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    width: 350px;
+}
+.item{
+    height: 70px;
+    width: 70px;
+    background-color: blueviolet;
+}
+
+
+

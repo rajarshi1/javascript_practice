@@ -1,10 +1,24 @@
+body{
+    /* width: 500px; */
+    text-align: center;
+    font-family: sans-serif;
+}
+
 .item_list{
     display: grid;
     grid-template-columns: 1fr ;
 }
 li{
     display:grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr;
     grid-auto-flow: column;
     align-items: center;
+}
+
+h1{
+    text-align: center;
+    color: rgb(223, 135, 135);
+}
+.main_section{
+    text-align: center;
 }
