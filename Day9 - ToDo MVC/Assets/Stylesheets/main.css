@@ -1,3 +1,6 @@
+body{
+    background-color: rgba(250, 242, 242, 0.822);
+}
 h1{
     font-family: sans-serif;
     color: rgb(243, 152, 152);
@@ -21,8 +24,9 @@ li{
 }
 .list_status{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     font-family: sans-serif;
+    justify-items: end;
 }
 .one{
     /* padding: 20px; */
@@ -65,4 +69,16 @@ li{
     border-radius: 4px;
     box-sizing: border-box;
 }
- 
+.one_two{
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid grey; */
+} 
+
+.grid_new{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.clearcompleted{
+    justify-content: end;
+}
