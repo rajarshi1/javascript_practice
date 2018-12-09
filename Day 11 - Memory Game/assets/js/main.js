@@ -67,8 +67,8 @@ function setIcon(array) {
                 childicon.setAttribute("class", "fas fa-anchor");
                 v.appendChild(childicon);
                 break; 
-                var item = document.querySelectorAll('.item');
-                item.forEach((v) => v.addEventListener('click', flipBox)); //why is this here??
+                // var item = document.querySelectorAll('.item');
+                // item.forEach((v) => v.addEventListener('click', flipBox)); //why is this here??
             case '8':
                 childicon.setAttribute("class", "fas fa-adjust");
                 v.appendChild(childicon);
@@ -111,9 +111,9 @@ function compare() {
     if (firstClick == secondClick) {
         matched.push(firstClick);
     }
-    endGame()
-    hideUnmatched();
-}
+ item.forEach((v) => v.addEventListener('click', flipBox)); //why is this here??e()
+ item.forEach((v) => v.addEventListener('click', flipBox)); //why is this here??matched();
+}item.forEach((v) => v.addEventListener('click', flipBox)); //why is this here??
 
 function hideUnmatched(items = item) {
     items.forEach((v) => {

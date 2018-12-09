@@ -1,3 +1,3 @@
 import chunk from './chunk.js';
 
-chunk();
+chunk([1,1,3,4,5,6,3,5],4);
