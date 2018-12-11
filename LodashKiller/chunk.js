@@ -5,7 +5,7 @@ export default function chunk(arr, n) {
     for (let i = 0; i < arr.length; ++i) {
         if (i % n != 0 || i == 0) {
             temp.push(arr[i]);
-
+        
         }
         else {
             newArray.push(temp);

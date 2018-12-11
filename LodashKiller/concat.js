@@ -1,3 +1,3 @@
-export default function compact(arr) {
-	
+export default function concat(arr) {
+                                                    
 }
