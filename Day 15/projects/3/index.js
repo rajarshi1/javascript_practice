@@ -29,14 +29,17 @@ console.log(vicky.age); // -> Logs 24
 
 var personStore = {
 	// add code here
-
+greet : console.log('hello')
 
 };
 
 // /********* Uncomment this line to test your work! *********/
 // personStore.greet(); // -> Logs 'hello'
 
-
+function personFromPersonStore(name,age){
+  this.personName = name,
+  this.personAge = age
+}
 
 /*** CHALLENGE 2 of 3 ***/
 

@@ -10,6 +10,7 @@ Create a function that accepts two inputs (name and age) and returns an object. 
 4. return the object
 
 
+
 ## Using Object.create
 
 #### Challenge 1/3
